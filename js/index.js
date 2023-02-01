@@ -1,42 +1,73 @@
+    //  1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, вывести сообщение "Ошибка". Числа принять от пользователя.
 
-// 2. Обменять значения двух переменных, используя третью (буферную) переменную.
+document.write('<div>');
+// let number1 = +prompt('Введите первое число');
+// let number2 = +prompt('Введите второе число');
+// let number3 = +prompt('Введите третье число');
+// let result;
 
-var a = 5;
-var b = 3;
-var c;
-document.write(a, b);
-c = a;
-a = b;
-b = c;
-document.write(a, b);
+// if (number1 == number2 || number1 == number3 || number3 == number2) {
+//     alert('Ошибка');
+// } else {
+//     alert(result = (number1 + number2 + number3) / 3);
+// };
+document.write('</div>');
 
+    // 2. Построить прямоугольный треугольник состоящий из символа "*".
 
-// 3. Объявите две переменные: admin и name. Запишите в admin строку "Василий". Замените значение из admin в name. Выведите name.
+document.write('<div>');
+
+document.write('</div>');
+    // 3. Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран.
+
+// document.write('<div>');
+//     let a = +prompt('Введите первое число');
+//     let b = +prompt('Введите второе число');
+//     let c = +prompt('Введите третье число');
     
-var admin; 
-var name;
-admin = 'Василий';
-name = admin;
-document.write(name);
+// if (a > b && a > c) {
+//     alert(a);
+// } else if (b > a && b > c) {
+//      alert(b);
+// } else {
+//      alert(c);
+//     }
+// document.write('</div>');
 
+    // 4. Дано два числа A и B где (A<B).
+    // Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В.
+    // Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.
 
-// 4. Получить от пользователя данные о пользователе: имя, фамилию, возраст. Обработать их и вывести в консоль.
+// document.write('<div>');    
+//         let d = +prompt("Введите 1 число");
+//         let f = +prompt("Введите 2 число");
+//         result  = 0;
+//         document.write('Нечетные: ')
+//             for (let i = d + 1; i < f; i+=1)   {
+                
+//                 if (i % 2 > 0) {
+//                     document.write(`${i}, `);
+//                 }
+//                 result += i;
+//             }
+//         document.write(`<br/>Сумма чисел в промежутке между ${d} и ${f} = ${result}`);
+// document.write('</div>');
 
-var name = prompt('Enter your name');
-var lastName = prompt('Enter your last name');
-var age = prompt('Enter your age');
+    // 5. Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов (n принять от пользователя).
+    //    Числа Фибоначчи – это элементы числовой последовательности, в которой каждое последующее число равно сумме двух предыдущих.
 
-console.log(`"Congratulations!!!" Your full name: ${name} ${lastName}, and you are ${age} years old`);
+document.write('<div>');
+document.write('</div>');
 
-    
-// 5. Запросите у пользователя его возраст, после чего выведите на экран модальное окно с вопросом: "Ваш возраст ...(введеное пользователем число) лет?".
-// Далее в зависимости от выбора пользователя выводится модальное окно с информацией true или false.
+    // 6. Вывести на экран таблицу умножения от 1 до 10.
 
-var age = prompt('Enter your age');
-var answer = confirm(`Ваш возраст ${age} лет?`);
-if (answer == true) {
-    alert('TRUE');
-} else {
-    alert('FALSE');
+document.write('<table class="table" border>');
+for (i = 1; i <= 10; i++){
+        document.write('<tr>');
+        for (j = 1; j <= 10; j++){
+            document.write(`<td>${j} x ${i} = ${i*j}</td>`);
+        }
+        document.write('</tr>');
 }
-
+document.write('</table>');
+    
