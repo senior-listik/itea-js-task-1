@@ -67,7 +67,7 @@ document.write('</div>');
 
 document.write('<div>');
 let n = +prompt('Введите желаемое количество чисел ряда Фибоначчи');
-let g = 0;
+let g = -1;
 let h = 1;
 let k;
 for (i = 0; i < n; i++){
