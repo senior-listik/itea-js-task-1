@@ -87,5 +87,5 @@ document.write(month[month.length - 2] + '<br>');
 //2
 document.write(month.slice(10, 11) + '<br>');
 //3
-document.write(month.slice(10, 11) + '<br>');
+document.write(month.slice(-2, -1) + '<br>');
     
