@@ -4,14 +4,24 @@
     //    Все аргументы для функции принять от пользователя.
 
 let a = +prompt('Первое число');
-let sign = +prompt('Действие');
+let c = prompt('Действие');
 let b = +prompt('Второе число');
 let result;
-calculate(a, b, sign)
+console.log(c != '+' || '-' || '/' || '*');
+calculate(a, b, c)
 
 function calculate(operand1, operand2, sign) {
-    result = operand1 + sign + operand2;
-    document.write(result);
+    if ( (typeof a && typeof b == 'number')) {
+
+        switch (c) {
+            case '+': document.write(result = a + b); break;
+            case '-': document.write(result = a - b); break;
+            case '/': document.write(result = a / b); break;
+            case '*': document.write(result = a * b); break;
+        }
+    } else {
+        alert('Вы ввели не корректные данные');
+    }
     }
 
     // 2. Создать функцию, возводящую число в степень, число и сама степень вводится пользователем
@@ -36,7 +46,7 @@ function calculate(operand1, operand2, sign) {
 // function fibonacci(n){
 // let g = -1;
 // let h = 1;
-// let k;
+// let k;operand1operand1
 // for (i = 1; i <= n; i++){
 //     k = g + h;
 //     g = h;
